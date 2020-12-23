@@ -1,0 +1,127 @@
+package com.zhihuixueai.sysmgr.api.schools;
+
+import com.fasterxml.jackson.annotation.JsonInclude;
+
+@JsonInclude(JsonInclude.Include.NON_EMPTY)
+public class SchoolRestBean {
+	private Long id;
+	
+	private String name;
+	
+	private String province_name;
+	
+	private String city_name;
+	
+	private String county_name;
+	
+	private String contact_person;
+	
+	private String contact_phone;
+	
+	private Integer max_account;
+	
+	private Integer status;
+	
+	private String province_id;
+	
+	private String city_id;
+	
+	private String county_id;
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getProvince_name() {
+		return province_name;
+	}
+
+	public void setProvince_name(String province_name) {
+		this.province_name = province_name;
+	}
+
+	public String getCity_name() {
+		return city_name;
+	}
+
+	public void setCity_name(String city_name) {
+		this.city_name = city_name;
+	}
+
+	public String getCounty_name() {
+		return county_name;
+	}
+
+	public void setCounty_name(String county_name) {
+		this.county_name = county_name;
+	}
+
+	public String getContact_person() {
+		return contact_person;
+	}
+
+	public void setContact_person(String contact_person) {
+		this.contact_person = contact_person;
+	}
+
+	public String getContact_phone() {
+		return contact_phone;
+	}
+
+	public void setContact_phone(String contact_phone) {
+		this.contact_phone = contact_phone;
+	}
+
+	public Integer getMax_account() {
+		return max_account;
+	}
+
+	public void setMax_account(Integer max_account) {
+		this.max_account = max_account;
+	}
+
+	public Integer getStatus() {
+		return status;
+	}
+
+	public void setStatus(Integer status) {
+		this.status = status;
+	}
+
+	public String getProvince_id() {
+		return province_id;
+	}
+
+	public void setProvince_id(String province_id) {
+		this.province_id = province_id;
+	}
+
+	public String getCity_id() {
+		return city_id;
+	}
+
+	public void setCity_id(String city_id) {
+		this.city_id = city_id;
+	}
+
+	public String getCounty_id() {
+		return county_id;
+	}
+
+	public void setCounty_id(String county_id) {
+		this.county_id = county_id;
+	}
+}

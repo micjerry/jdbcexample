@@ -1,0 +1,33 @@
+logging:
+    file: 
+      name: /var/log/edusys/${spring.application.name}.log 
+    config: classpath:logback-spring.xml
+    level:
+        root: INFO
+        org.springframework: INFO
+        com.zhihuixueai: INFO
+        
+spring:
+  redis:
+    cluster:
+      nodes: 
+        - 127.0.0.1:6381
+        - 127.0.0.1:6382
+        - 127.0.0.1:6383
+        - 127.0.0.1:6384
+        - 127.0.0.1:6385
+        - 127.0.0.1:6386
+      maxtotal: 20
+      maxidle: 10
+      minidle: 3
+    
+  jpa:
+    hibernate:
+      ddl-auto: none
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/edu-hope-light?characterEncoding=utf8&useSSL=false
+    username: root
+    password: BP2w0urvKAiu
+    driver-class-name: com.mysql.cj.jdbc.Driver
